@@ -1,5 +1,6 @@
 import { Envelope, PaperPlaneTilt } from "phosphor-react";
 import React from "react";
+import { profile } from "../../helper/images";
 
 export function AboutMe() {
   let email = "mailto:gersonlamela7@gmail.com";
@@ -9,7 +10,7 @@ export function AboutMe() {
         <div className="mx-auto px-2 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center  justify-center gap-10">
           <div className=" w-[250px] h-[250px] md:w-[367px] md:h-[367px] bg-dark200 border-l-4 border-dark dark:border-blue">
             <img
-              src="../../public/assets/img/user.jpg"
+              src={profile}
               className="w-[250px] h-[250px] md:w-[367px] md:h-[367px] text-blue text-3xl  font-bold flex items-center justify-center"
               alt="Foto do Gerson Lamela"
               srcSet=""
