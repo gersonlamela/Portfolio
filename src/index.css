@@ -4,17 +4,26 @@
 
 @layer base {
   html {
-    @apply font-Inter;
+    @apply font-Inter scroll-smooth;
+  }
+  .btn {
+    @apply flex items-center justify-center gap-2 text-base font-medium w-[130px] h-10 px-1 border-0 z-[1] relative duration-[0.3s] text-dark dark:text-light before:bg-light before:dark:bg-dark hover:scale-110;
+  }
+  .icon {
+    @apply text-dark dark:text-light w-6 h-6;
+  }
+  .list {
+    @apply list-disc ml-3 mt-2 text-xs;
   }
 }
 
-.btn.linkedin {
+.PurpleToBlue {
   background: linear-gradient(45deg, #9358f7, #10d7e2);
 
   border-radius: 6px;
 }
 
-.btn.github {
+.PinkToPurlple {
   background: linear-gradient(45deg, #d24074, #6518b4);
 
   border-radius: 6px;

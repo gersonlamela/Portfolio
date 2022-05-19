@@ -18,9 +18,11 @@ export function ThemeContextProvider({ children }) {
   }, [theme]);
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
-      {children}
-    </ThemeContext.Provider>
+    <>
+      <ThemeContext.Provider value={{ theme, setTheme }}>
+        <body className="bg-light dark:bg-dark transition-all">{children}</body>
+      </ThemeContext.Provider>
+    </>
   );
 }
 

@@ -5,10 +5,10 @@ import { Disclosure } from "@headlessui/react";
 import { useTheme } from "../hooks/useTheme/useTheme";
 
 const navigation = [
-  { name: "Dashboard", href: "#" },
-  { name: "Team", href: "#" },
-  { name: "Projects", href: "#" },
-  { name: "Calendar", href: "#" },
+  { name: "Home", href: "#" },
+  { name: "Sobre mim", href: "#aboutme" },
+  { name: "Experiência", href: "#experience" },
+  { name: "Projetos", href: "#projects" },
 ];
 
 export function Navbar() {
@@ -21,7 +21,7 @@ export function Navbar() {
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-            <div className="relative flex items-center justify-between h-16">
+            <div className="relative flex items-center justify-between pt-5">
               <div className="relative inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -69,12 +69,11 @@ export function Navbar() {
                 {/* DarkMode */}
                 {theme === "dark" ? (
                   <Sun
-                    color="#fff"
                     size={25}
                     onClick={() =>
                       theme === "light" ? setTheme("dark") : setTheme("light")
                     }
-                    className="cursor-pointer ml-auto"
+                    className="cursor-pointer ml-auto text-light"
                   />
                 ) : (
                   <Moon
@@ -82,13 +81,13 @@ export function Navbar() {
                     onClick={() =>
                       theme === "light" ? setTheme("dark") : setTheme("light")
                     }
-                    className="cursor-pointer ml-auto"
+                    className="cursor-pointer ml-auto text-dark"
                   />
                 )}
               </div>
             </div>
           </div>
-          <Disclosure.Panel className="sm:hidden ">
+          <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Disclosure.Button
