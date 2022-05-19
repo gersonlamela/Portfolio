@@ -56,10 +56,10 @@ export function Experience() {
 
   return (
     <>
-      <div className="w-full h-screen flex flex-row items-center max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div className="w-full h-screen flex flex-col lg:flex-row items-center justify-start  lg:justify-center max-w-7xl mx-auto p-6   px-[180px]">
         <Tab.Group>
-          <Tab.List className="flex flex-col border-l-1 border-blue outline-none space-x-1 rounded-xl p-1 ">
-            <h1 className="w-full py-10 text-4xl  text-dark dark:text-light flex flex-col items-center  max-w-7xl mx-auto ">
+          <Tab.List className="flex flex-col sm:flex-row lg:flex-col border-l-1 border-blue outline-none space-x-1 rounded-xl p-1 gap-5">
+            <h1 className="w-full py-10 text-4xl hidden lg:flex text-dark dark:text-light flex-col items-center  max-w-7xl mx-auto ">
               Experiências
             </h1>
             {Object.keys(categories).map((category) => (
@@ -67,7 +67,7 @@ export function Experience() {
                 key={category}
                 className={({ selected }) =>
                   classNames(
-                    "w-[192px] h-[55px] text-lg text-dark dark:text-light font-medium",
+                    "w-[150px] h-[40px] md:w-[192px] md:h-[55px] flex items-center justify-center  text-md md:text-lg text-dark dark:text-light font-medium ",
                     "focus:outline-none",
                     selected
                       ? "bg-white shadow border-l-2 border-blue bg-dark200 text-light"
@@ -79,24 +79,26 @@ export function Experience() {
               </Tab>
             ))}
           </Tab.List>
-          <Tab.Panels className="mt-28  w-[650px] h-[185px] ml-5">
+          <Tab.Panels className="mt-20 md:mt-28 w-[400px] sm:w-[500px] md:w-[650px] h-[185px] ml-5">
             {Object.values(categories).map((posts, idx) => (
               <Tab.Panel
                 key={idx}
                 className={classNames(
-                  "rounded-xl bg-white h-[185px] flex flex-col justify-between",
+                  "rounded-xl bg-white h-[185px] flex flex-col items-center md:justify-between",
                   "focus:outline-none focus:ring-0"
                 )}
               >
-                <ul>
+                <ul className="">
                   {posts.map((post) => (
                     <li
                       key={post.id}
-                      className="relative rounded-md p-3 hover:bg-gray-100"
+                      className="relative rounded-md p-3 hover:bg-gray-100 "
                     >
-                      <h3 className="text-2xl flex justify-between font-medium text-dark dark:text-light leading-5">
+                      <h3 className="text-2xl flex flex-col lg:flex-row justify-between font-medium text-dark dark:text-light leading-5">
                         {post.title}
-                        <span className="text-base">{post.date}</span>
+                        <span className="text-base mt-2 md:mt-0">
+                          {post.date}
+                        </span>
                       </h3>
                       <span className="text-dark dark:text-blue text-base font-medium">
                         {post.empresa}
@@ -114,7 +116,7 @@ export function Experience() {
                       <a
                         href="#"
                         className={classNames(
-                          "absolute inset-0 rounded-md ",
+                          "relative inset-0 rounded-md  ",
                           "ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"
                         )}
                       />
