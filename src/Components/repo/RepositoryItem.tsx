@@ -17,10 +17,10 @@ export function RepositoryItem(props: RepositoryItemProps) {
         <div className="relative rounded-md p-3 hover:bg-gray-100 mb-10">
           <div className="w-[312px] h-[200px]  md:w-[530px] border-l-4 border-blue flex items-center justify-center bg-light dark:bg-dark ">
             <img
-              src="{post.image}"
+              src={props.repository.description}
               alt="FOTO"
               srcSet=""
-              className="text-blue text-5xl font-bold "
+              className="text-blue text-5xl font-bold"
             />
           </div>
 
@@ -29,7 +29,7 @@ export function RepositoryItem(props: RepositoryItemProps) {
               {props.repository.name}
             </h3>
 
-            <p className="text-dark dark:text-light w-[312px] md:w-[438px] max-h-10 overflow-scroll">
+            <p className="text-dark dark:text-light w-[312px] md:w-[438px] max-h-16 overflow-auto">
               {props.repository.description ? (
                 props.repository.description
               ) : (
