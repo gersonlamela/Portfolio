@@ -34,10 +34,15 @@ export function AboutMe() {
               como é que um simples site é feito.
             </p>
             <div className="flex items-center gap-4">
-              <button className="btn PurpleToBlue before:bg-graylight">
-                <PaperPlaneTilt className="icon" />
-                Currículo
-              </button>
+              <a
+                href="https://gersonlamelacurriculum.vercel.app/"
+                target="_blank"
+              >
+                <button className="btn PurpleToBlue before:bg-graylight">
+                  <PaperPlaneTilt className="icon" />
+                  Currículo
+                </button>
+              </a>
               <button className="btn PinkToPurlple before:bg-graylight">
                 <Envelope className="icon" />
                 <a href={email}>E-mail</a>
