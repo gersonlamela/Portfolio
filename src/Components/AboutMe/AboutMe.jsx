@@ -7,11 +7,11 @@ export function AboutMe() {
   return (
     <>
       <div className="w-full h-screen bg-graylight dark:bg-dark200 flex items-center ">
-        <div className="mx-auto px-2 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center  justify-center gap-10">
-          <div className=" w-[250px] h-[250px] md:w-[367px] md:h-[367px] bg-dark200 border-l-4 border-dark dark:border-blue">
+        <div className="w-full h-screen mx-auto px-2 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center  justify-start sm:justify-center py-4 gap-10">
+          <div className="w-[150px] h-[150px] sm:w-[367px] sm:h-[367px] bg-dark200 border-l-4 border-dark dark:border-blue">
             <img
               src={profile}
-              className="w-[250px] h-[250px] md:w-[367px] md:h-[367px] text-blue text-3xl  font-bold flex items-center justify-center"
+              className="w-[150px] h-[150px] sm:w-[367px] sm:h-[367px] text-blue text-3xl  font-bold flex items-center justify-center"
               alt="Foto do Gerson Lamela"
               srcSet=""
             />
@@ -22,7 +22,7 @@ export function AboutMe() {
               <span className="text-sm mt-5">Porto,Portugal</span>
             </h1>
 
-            <p className="w-[400px] lg:w-[565px] font-light text-justify sm:text-sm md:text-md lg:text-lg text-dark dark:text-graylight">
+            <p className="w-[300px] lg:w-[565px] mb-5 lg:mb-0 font-light text-justify sm:text-sm md:text-md lg:text-lg text-dark dark:text-graylight">
               Sou o <span className="font-bold">Gerson Lamela</span> tenho
               <span> {new Date().getFullYear() - 2001}</span> anos, estudei no
               IPTA (Instituto Profissional de Tecnologias Avançadas),no curso de

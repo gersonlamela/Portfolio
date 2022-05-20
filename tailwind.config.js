@@ -1,6 +1,10 @@
 module.exports = {
   darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  variants: {
+    // ...
+    scrollbar: ["dark"],
+  },
   theme: {
     extend: {},
     fontFamily: {
@@ -30,8 +34,9 @@ module.exports = {
       dark: "#121212",
       dark200: " #151515",
       graylight: "#c4c4c4",
+      graydark: "#a1a1a1",
       light: "#ffffff",
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };

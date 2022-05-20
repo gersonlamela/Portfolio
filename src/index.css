@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply font-Inter scroll-smooth;
+    @apply font-Inter scroll-smooth scrollbarStyle;
   }
   .btn {
     @apply flex items-center justify-center gap-2 text-base font-medium w-[130px] h-10 px-1 border-0 z-[1] relative duration-[0.3s] text-dark dark:text-light before:bg-light before:dark:bg-dark hover:scale-110;
@@ -14,6 +14,22 @@
   }
   .list {
     @apply list-disc ml-3 mt-2 text-xs;
+  }
+
+  .scrollbarStyle {
+    @apply overflow-scroll  scrollbar scrollbar-thumb-gradientPurpleFrom  scrollbar-medium;
+  }
+}
+
+@layer utilities {
+  .scrollbar-medium::-webkit-scrollbar {
+    width: 14px;
+  }
+  .scrollbar-medium::-webkit-scrollbar-thumb {
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #aaaaaa;
   }
 }
 

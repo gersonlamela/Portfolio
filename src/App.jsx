@@ -1,9 +1,9 @@
 import { AboutMe } from "./Components/AboutMe/AboutMe";
 import { Experience } from "./Components/Experience/Experience";
+import { Footer } from "./Components/Footer/Footer";
 import { HeroMain } from "./Components/HeroMain/HeroMain";
 import { Navbar } from "./Components/Navbar/Navbar";
-
-import { RepositoryList } from "./Components/repo/RepositoryList";
+import { Projects } from "./Components/Projects/project";
 
 function App() {
   return (
@@ -19,8 +19,9 @@ function App() {
         <Experience />
       </section>
       <section id="projects">
-        <RepositoryList />
+        <Projects />
       </section>
+      <Footer />
     </>
   );
 }

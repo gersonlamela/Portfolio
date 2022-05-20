@@ -7,21 +7,7 @@ function classNames(...classes) {
 
 export function Experience() {
   let [categories] = useState({
-    ESTÁGIO: [
-      {
-        id: 1,
-        title: "Programador Web (Estágio)",
-        empresa: "MULTI-DI - Conquistagadget, Lda.",
-        date: "[ 06/04/2021 – 22/07/2021 ]",
-        topico1: "Controlo e gestão de conteúdos de websites da empresa",
-        topico2: "Otimização do código de websites",
-        topico3: "Desenvolver um site de vendas online (E-commerce).",
-        topico4: "Apoio na criação de novos conteúdos digitais",
-        topico5: "Controlo de base de dados",
-        topico6: "Suporte informático e digita",
-      },
-    ],
-    FORMAÇAO: [
+    FORMAÇÃO: [
       {
         id: 1,
         title: "Técnico de Multimédia",
@@ -34,6 +20,20 @@ export function Experience() {
         topico4: "Integração de conteúdos utilizando ferramentas de autor",
         topico5: "Programação de aplicações multimédia",
         topico6: "Programação Web e Mobile",
+      },
+    ],
+    ESTÁGIO: [
+      {
+        id: 1,
+        title: "Programador Web (Estágio)",
+        empresa: "MULTI-DI - Conquistagadget, Lda.",
+        date: "[ 06/04/2021 – 22/07/2021 ]",
+        topico1: "Controlo e gestão de conteúdos de websites da empresa",
+        topico2: "Otimização do código de websites",
+        topico3: "Desenvolver um site de vendas online (E-commerce).",
+        topico4: "Apoio na criação de novos conteúdos digitais",
+        topico5: "Controlo de base de dados",
+        topico6: "Suporte informático e digita",
       },
     ],
     UNIVERSIDADE: [
@@ -56,7 +56,7 @@ export function Experience() {
 
   return (
     <>
-      <div className="w-full h-screen flex flex-col lg:flex-row items-center justify-start  lg:justify-center max-w-7xl mx-auto p-6   px-[180px]">
+      <div className="w-full h-screen flex flex-col lg:flex-row items-center sm:justify-center  mt-10 lg:mb-5 lg:mt-0 lg:justify-center max-w-7xl mx-auto p-6 ">
         <Tab.Group>
           <Tab.List className="flex flex-col sm:flex-row lg:flex-col border-l-1 border-blue outline-none space-x-1 rounded-xl p-1 gap-5">
             <h1 className="w-full py-10 text-4xl hidden lg:flex text-dark dark:text-light flex-col items-center  max-w-7xl mx-auto ">
@@ -88,7 +88,7 @@ export function Experience() {
                   "focus:outline-none focus:ring-0"
                 )}
               >
-                <ul className="">
+                <ul className="px-4 sm:px-0">
                   {posts.map((post) => (
                     <li
                       key={post.id}
@@ -104,7 +104,7 @@ export function Experience() {
                         {post.empresa}
                       </span>
 
-                      <ul className="flex justify-between h-[120px] flex-col mt-5 text-xs font-normal leading-4 text-dark dark:text-light">
+                      <ul className=" flex justify-between w-full h-[120px] flex-col mt-5 text-xs font-normal leading-4 text-dark dark:text-light">
                         <li className="list text-sm">{post.topico1}</li>
                         <li className="list text-sm">{post.topico2}</li>
                         <li className="list text-sm">{post.topico3}</li>
