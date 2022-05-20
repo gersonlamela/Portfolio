@@ -79,7 +79,7 @@ export function Experience() {
               </Tab>
             ))}
           </Tab.List>
-          <Tab.Panels className="mt-20 md:mt-28 w-[400px] sm:w-[500px] md:w-[650px] h-[185px] ml-5">
+          <Tab.Panels className="mt-10 md:mt-28 w-full sm:w-[500px] md:w-[650px] h-[185px] ml-5">
             {Object.values(categories).map((posts, idx) => (
               <Tab.Panel
                 key={idx}

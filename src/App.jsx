@@ -1,4 +1,5 @@
 import { AboutMe } from "./Components/AboutMe/AboutMe";
+import { ButtonTop } from "./Components/ButtonTop/ButtonTop";
 import { Experience } from "./Components/Experience/Experience";
 import { Footer } from "./Components/Footer/Footer";
 import { HeroMain } from "./Components/HeroMain/HeroMain";
@@ -8,6 +9,7 @@ import { Projects } from "./Components/Projects/project";
 function App() {
   return (
     <>
+      <ButtonTop />
       <section id="home">
         <Navbar />
         <HeroMain />
