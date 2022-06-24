@@ -12,6 +12,7 @@ import {
   Project02,
   Project03,
   Project04,
+  Project05,
 } from "../../helper/images";
 import React from "react";
 
@@ -39,7 +40,7 @@ export function Projects() {
     ],
     Projeto2: [
       {
-        id: 1,
+        id: 2,
         title: "Dev Finances",
         image: Project02,
         tecnologias: [
@@ -57,7 +58,7 @@ export function Projects() {
     ],
     Projeto3: [
       {
-        id: 1,
+        id: 3,
         title: "Podcastr",
         image: Project03,
         tecnologias: [
@@ -73,7 +74,7 @@ export function Projects() {
     ],
     Projeto4: [
       {
-        id: 1,
+        id: 4,
         title: "Github Explorer",
         image: Project04,
         tecnologias: [
@@ -87,6 +88,22 @@ export function Projects() {
         linkWeb: "",
         resumo:
           "Projeto desenvolvido durante o Ignite da Rocketseat | Trilha ReactJS Chapter I.",
+      },
+    ],
+    Projeto5: [
+      {
+        id: 5,
+        title: "Login",
+        image: Project05,
+        tecnologias: [
+          <FileHtml size={32} />,
+          <FileJs size={32} />,
+          <FileCss size={32} />,
+        ],
+
+        linkRepo: "https://github.com/gersonlamela/Login",
+        linkWeb: "",
+        resumo: "Login System JWT token",
       },
     ],
   });
