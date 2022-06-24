@@ -35,7 +35,7 @@ export function AboutMe() {
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="https://gersonlamelacurriculum.vercel.app/"
+                href="https://gersonlamela-curriculum.vercel.app/"
                 target="_blank"
               >
                 <button className="btn PurpleToBlue before:bg-graylight">
