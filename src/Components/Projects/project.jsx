@@ -13,6 +13,7 @@ import {
   Project03,
   Project04,
   Project05,
+  Project06
 } from "../../helper/images";
 import React from "react";
 
@@ -104,6 +105,22 @@ export function Projects() {
         linkRepo: "https://github.com/gersonlamela/Login",
         linkWeb: "",
         resumo: "Login System JWT token",
+      },
+    ],
+    Projeto6: [
+      {
+        id: 5,
+        title: "Table Prices",
+        image: Project06,
+        tecnologias: [
+          <FileHtml size={32} />,
+          <FileTs size={32} />,
+          <FileCss size={32} />,
+        ],
+
+        linkRepo: "https://github.com/gersonlamela/BoraCodar-15",
+        linkWeb: "https://bora-codar-15.vercel.app/",
+        resumo: "Table Prices",
       },
     ],
   });
