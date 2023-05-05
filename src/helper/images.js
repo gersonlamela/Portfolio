@@ -7,6 +7,8 @@ import Project03 from "../Assets/img/project03.png";
 import Project04 from "../Assets/img/project04.png";
 import Project05 from "../Assets/img/project05.png";
 import Project06 from "../Assets/img/project06.png";
+import Project07 from "../Assets/img/project07.png";
+
 
 
 export {
@@ -18,5 +20,7 @@ export {
   Project03,
   Project04,
   Project05,
-  Project06
+  Project06,
+  Project07
+
 };

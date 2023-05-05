@@ -13,7 +13,9 @@ import {
   Project03,
   Project04,
   Project05,
-  Project06
+  Project06,
+  Project07
+
 } from "../../helper/images";
 import React from "react";
 
@@ -109,7 +111,7 @@ export function Projects() {
     ],
     Projeto6: [
       {
-        id: 5,
+        id: 6,
         title: "Table Prices",
         image: Project06,
         tecnologias: [
@@ -121,6 +123,22 @@ export function Projects() {
         linkRepo: "https://github.com/gersonlamela/BoraCodar-15",
         linkWeb: "https://bora-codar-15.vercel.app/",
         resumo: "Table Prices",
+      },
+    ],
+    Projeto7: [
+      {
+        id: 7,
+        title: "Cartão de crédito",
+        image: Project07,
+        tecnologias: [
+          <FileHtml size={32} />,
+          <FileTs size={32} />,
+          <FileCss size={32} />,
+        ],
+
+        linkRepo: "https://github.com/gersonlamela/BoraCodar-13-Cartao-de-Credito",
+       linkWeb: "https://bora-codar-13-cartao-de-credito.vercel.app/", 
+        resumo: "Cartão de crédito",
       },
     ],
   });
