@@ -3,19 +3,34 @@ import { useEffect, useState, createContext, useContext } from "react";
 export const ThemeContext = createContext();
 
 export function ThemeContextProvider({ children }) {
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") === "dark" ? "dark" : "light"
-  );
+  const THEME_KEY = "theme";
 
-  useEffect(() => {
-    const root = window.document.documentElement;
+const getInitialTheme = () => {
+  const userPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-    const removeColor = theme === "light" ? "dark" : "light";
+  console.log(userPrefersDark)
 
-    root.classList.remove(removeColor);
-    root.classList.add(theme);
-    localStorage.setItem("theme", theme);
-  }, [theme]);
+  return userPrefersDark ? "dark" : "light";
+};
+
+const [theme, setTheme] = useState(() => {
+  const savedTheme = localStorage.getItem(THEME_KEY);
+  if (typeof savedTheme === "string" && (savedTheme === "dark" || savedTheme === "light")) {
+    return savedTheme;
+  }
+  return getInitialTheme();
+});
+
+useEffect(() => {
+  const root = window.document.documentElement;
+  const newColor = theme === "light" ? "dark" : "light";
+
+  root.style.setProperty("--color-mode", theme);
+  root.classList.remove(newColor);
+  root.classList.add(theme);
+
+  localStorage.setItem(THEME_KEY, theme);
+}, [theme]);
 
   return (
     <>
