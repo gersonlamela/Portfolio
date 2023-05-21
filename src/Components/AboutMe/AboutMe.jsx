@@ -4,6 +4,25 @@ import { profile } from "../../helper/images";
 
 export function AboutMe() {
   let email = "mailto:gersonlamela7@gmail.com";
+  function calculateAge(birthDate) {
+    var today = new Date();
+    var birthDate = new Date(birthDate);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var monthDiff = today.getMonth() - birthDate.getMonth();
+    
+    // Check if the current month is before the birth month or if it's the birth month but the current day is before the birth day
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    
+    return age;
+  }
+
+  var birthDate = "2001-12-2"
+  var age = calculateAge(birthDate);
+
+ ;
+
   return (
     <>
       <div className="w-full h-screen bg-graylight dark:bg-dark200 flex items-center ">
@@ -24,7 +43,7 @@ export function AboutMe() {
 
             <p className="w-[300px] lg:w-[565px] mb-5 lg:mb-0 font-light text-justify sm:text-sm md:text-md lg:text-lg text-dark dark:text-graylight">
               Sou o <span className="font-bold">Gerson Lamela</span> tenho
-              <span> {new Date().getFullYear() - 2001}</span> anos, estudei no
+              <span> {age}</span> anos, estudei no
               IPTA (Instituto Profissional de Tecnologias Avançadas),no curso de
               Multimédia , tenho como objetivos concluir universidade
               (Engenharia Multimédia) e entrar em contacto na área da

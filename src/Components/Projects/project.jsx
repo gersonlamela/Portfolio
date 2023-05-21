@@ -6,6 +6,7 @@ import {
   FileTs,
   Link,
   GoogleChromeLogo,
+  GithubLogo,
 } from "phosphor-react";
 import {
   Project01,
@@ -15,8 +16,8 @@ import {
   Project05,
   Project06,
   Project07,
-  Project08
-
+  Project08,
+  Project09,
 } from "../../helper/images";
 import React from "react";
 
@@ -31,7 +32,7 @@ export function Projects() {
         image: Project01,
         tecnologias: [
           <FileTs size={32} />,
-          <FileHtml size={32} />,
+          <Atom size={32} />,
           <FileJs size={32} />,
           <FileCss size={32} />,
         ],
@@ -49,7 +50,7 @@ export function Projects() {
         image: Project02,
         tecnologias: [
           <FileTs size={32} />,
-          <FileHtml size={32} />,
+          <Atom size={32} />,
           <FileJs size={32} />,
           <FileCss size={32} />,
         ],
@@ -83,7 +84,7 @@ export function Projects() {
         image: Project04,
         tecnologias: [
           <FileTs size={32} />,
-          <FileHtml size={32} />,
+          <Atom size={32} />,
           <FileJs size={32} />,
           <FileCss size={32} />,
         ],
@@ -100,7 +101,7 @@ export function Projects() {
         title: "Login",
         image: Project05,
         tecnologias: [
-          <FileHtml size={32} />,
+          <Atom size={32} />,
           <FileJs size={32} />,
           <FileCss size={32} />,
         ],
@@ -116,7 +117,7 @@ export function Projects() {
         title: "Table Prices",
         image: Project06,
         tecnologias: [
-          <FileHtml size={32} />,
+          <Atom size={32} />,
           <FileTs size={32} />,
           <FileCss size={32} />,
         ],
@@ -132,13 +133,14 @@ export function Projects() {
         title: "Cartão de crédito",
         image: Project07,
         tecnologias: [
-          <FileHtml size={32} />,
+          <Atom size={32} />,
           <FileTs size={32} />,
           <FileCss size={32} />,
         ],
 
-        linkRepo: "https://github.com/gersonlamela/BoraCodar-13-Cartao-de-Credito",
-       linkWeb: "https://bora-codar-13-cartao-de-credito.vercel.app/", 
+        linkRepo:
+          "https://github.com/gersonlamela/BoraCodar-13-Cartao-de-Credito",
+        linkWeb: "https://bora-codar-13-cartao-de-credito.vercel.app/",
         resumo: "Cartão de crédito",
       },
     ],
@@ -148,14 +150,29 @@ export function Projects() {
         title: "Calculadora",
         image: Project08,
         tecnologias: [
-          <FileHtml size={32} />,
+          <Atom size={32} />,
           <FileTs size={32} />,
           <FileCss size={32} />,
         ],
 
         linkRepo: "https://github.com/gersonlamela/BoraCodar-5-Calculadora",
-       linkWeb: "https://bora-codar-5-calculadora.vercel.app/", 
+        linkWeb: "https://bora-codar-5-calculadora.vercel.app/",
         resumo: "Calculadora",
+      },
+    ],
+    Projeto9: [
+      {
+        id: 9,
+        title: "NLW - SpaceTime",
+        image: Project09,
+        tecnologias: [
+          <Atom size={32} />,
+          <FileTs size={32} />,
+          <FileCss size={32} />,
+        ],
+
+        linkRepo: "https://github.com/gersonlamela/NLW-Spacetime",
+        resumo: "NLW Spacetime é uma aplicação de recordação de memórias, onde o usuário poderá adicionar uma timeline memorias marcantes da sua vida",
       },
     ],
   });
@@ -204,8 +221,8 @@ export function Projects() {
                           className="relative inset-0 rounded-md ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"
                         >
                           <button className="btn PurpleToBlue before:bg-graylight ">
-                            <Link className="icon" />
-                            <span>Visualizar</span>
+                          <GithubLogo className="icon"/>
+                            <span>Github</span>
                           </button>
                         </a>
                       ) : (
