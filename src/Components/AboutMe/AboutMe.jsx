@@ -1,6 +1,7 @@
 import { Envelope, PaperPlaneTilt } from "phosphor-react";
 import React from "react";
 import { profile } from "../../helper/images";
+import ScrollRevealSection from "../RevealSections/revealSections";
 
 export function AboutMe() {
   let email = "mailto:gersonlamela7@gmail.com";
@@ -24,8 +25,9 @@ export function AboutMe() {
  ;
 
   return (
-    <>
+      
       <div className="w-full h-screen bg-graylight dark:bg-dark200 flex items-center ">
+         
         <div className="w-full h-screen mx-auto px-2 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center  justify-start sm:justify-center py-4 gap-10">
           <div className="w-[150px] h-[150px] sm:w-[367px] sm:h-[367px] bg-dark200 border-l-4 border-dark dark:border-blue">
             <img
@@ -70,6 +72,6 @@ export function AboutMe() {
           </div>
         </div>
       </div>
-    </>
+
   );
 }

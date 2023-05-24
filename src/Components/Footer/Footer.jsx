@@ -3,7 +3,7 @@ import React from "react";
 
 export function Footer() {
   return (
-    <div className="w-full h-[100px] flex items-center justify-between px-[180px] text-dark dark:text-graylight bg-graydark dark:bg-dark">
+    <div className="w-full h-[100px] flex-col md:flex-row flex items-center justify-center md:justify-between sm:px-[180px] text-dark dark:text-graylight bg-graydark dark:bg-dark">
       <span className="text-base font-normal">
         @ {new Date().getFullYear()} - Gerson Lamela
       </span>
