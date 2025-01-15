@@ -10,6 +10,8 @@ import Project06 from "../Assets/img/project06.png";
 import Project07 from "../Assets/img/project07.png";
 import Project08 from "../Assets/img/project08.png";
 import Project09 from "../Assets/img/project09.png";
+import Project10 from "../Assets/img/project10.png";
+
 
 
 
@@ -27,8 +29,8 @@ export {
   Project06,
   Project07,
   Project08,
-  Project09
-
+  Project09,
+  Project10
 
 
 };

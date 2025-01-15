@@ -18,6 +18,7 @@ import {
   Project07,
   Project08,
   Project09,
+  Project10,
 } from "../../helper/images";
 import React from "react";
 
@@ -28,8 +29,8 @@ export function Projects() {
     Projeto1: [
       {
         id: 1,
-        title: "NLW Return Impulse Web",
-        image: Project01,
+        titulo: "System POS",
+        imagem: Project10,
         tecnologias: [
           <FileTs size={32} />,
           <Atom size={32} />,
@@ -37,17 +38,17 @@ export function Projects() {
           <FileCss size={32} />,
         ],
 
-        linkRepo: "https://github.com/gersonlamela/nlw-return-impulse-web",
-        linkWeb: "https://nlw-return-impulse-web-snowy-sigma.vercel.app/",
+        linkRepo: "https://github.com/gersonlamela/System-POS-Restaurant",
+        linkWeb: "https://system-pos-restaurant.vercel.app",
         resumo:
-          "O Feedback Widget, carinhosamente apelidado de FeedGet, foi criado com a intenção de enviar feedbacks, sendo ele um problema, uma ideia ou outro, a preferência do usuário, enviando seu feedback em texto, juntamente com uma screenshot, diretamente para o email do desenvolvedor do site.",
+          "This project was developed as part of my final undergraduate Multimedia Engineering thesis, where I achieved a final grade of 19/20.",
       },
     ],
     Projeto2: [
       {
         id: 2,
-        title: "Dev Finances",
-        image: Project02,
+        titulo: "Dev Finances",
+        imagem: Project02,
         tecnologias: [
           <FileTs size={32} />,
           <Atom size={32} />,
@@ -58,14 +59,14 @@ export function Projects() {
         linkRepo: "https://github.com/gersonlamela/dtmoney",
         linkWeb: "https://dtmoney-lac.vercel.app/",
         resumo:
-          "O dtmoney é uma aplicação de controle financeiro com a mesma ideia que o dev.finances, porém com tecnologias e recursos estudados e utilizados mais avançados, bibliotecas open source desenvolvidas pela comunidade. Foi desenvolvida durante as aulas do Chapter II da trilha de ReactJS do Bootcamp Ignite da Rocketseat, e nela é possível cadastrar e excluir transações e ver o saldo de entrada e saída 💰",
+          "O dtmoney é uma aplicação de controlo financeiro com a mesma ideia do dev.finances, mas com tecnologias e recursos mais avançados, utilizando bibliotecas open source desenvolvidas pela comunidade. Foi desenvolvida durante as aulas do Chapter II da trilha de ReactJS do Bootcamp Ignite da Rocketseat e permite registar e excluir transações, além de visualizar o saldo de entradas e saídas 💰.",
       },
     ],
     Projeto3: [
       {
         id: 3,
-        title: "Podcastr",
-        image: Project03,
+        titulo: "Podcastr",
+        imagem: Project03,
         tecnologias: [
           <FileTs size={32} />,
           <FileJs size={32} />,
@@ -74,14 +75,15 @@ export function Projects() {
 
         linkRepo: "https://github.com/gersonlamela/podcastr",
         linkWeb: "",
-        resumo: "Podcastr is a platform built for podcast broadcasting.",
+        resumo:
+          "O Podcastr é uma plataforma construída para transmissão de podcasts.",
       },
     ],
     Projeto4: [
       {
         id: 4,
-        title: "Github Explorer",
-        image: Project04,
+        titulo: "Github Explorer",
+        imagem: Project04,
         tecnologias: [
           <FileTs size={32} />,
           <Atom size={32} />,
@@ -98,8 +100,8 @@ export function Projects() {
     Projeto5: [
       {
         id: 5,
-        title: "Login",
-        image: Project05,
+        titulo: "Login",
+        imagem: Project05,
         tecnologias: [
           <Atom size={32} />,
           <FileJs size={32} />,
@@ -108,14 +110,14 @@ export function Projects() {
 
         linkRepo: "https://github.com/gersonlamela/Login",
         linkWeb: "",
-        resumo: "Login System JWT token",
+        resumo: "Sistema de Login com token JWT.",
       },
     ],
     Projeto6: [
       {
         id: 6,
-        title: "Table Prices",
-        image: Project06,
+        titulo: "Tabela de Preços",
+        imagem: Project06,
         tecnologias: [
           <Atom size={32} />,
           <FileTs size={32} />,
@@ -124,14 +126,14 @@ export function Projects() {
 
         linkRepo: "https://github.com/gersonlamela/BoraCodar-15",
         linkWeb: "https://bora-codar-15.vercel.app/",
-        resumo: "Table Prices",
+        resumo: "Tabela de Preços",
       },
     ],
     Projeto7: [
       {
         id: 7,
-        title: "Cartão de crédito",
-        image: Project07,
+        titulo: "Cartão de Crédito",
+        imagem: Project07,
         tecnologias: [
           <Atom size={32} />,
           <FileTs size={32} />,
@@ -141,14 +143,14 @@ export function Projects() {
         linkRepo:
           "https://github.com/gersonlamela/BoraCodar-13-Cartao-de-Credito",
         linkWeb: "https://bora-codar-13-cartao-de-credito.vercel.app/",
-        resumo: "Cartão de crédito",
+        resumo: "Cartão de Crédito",
       },
     ],
     Projeto8: [
       {
         id: 8,
-        title: "Calculadora",
-        image: Project08,
+        titulo: "Calculadora",
+        imagem: Project08,
         tecnologias: [
           <Atom size={32} />,
           <FileTs size={32} />,
@@ -163,8 +165,8 @@ export function Projects() {
     Projeto9: [
       {
         id: 9,
-        title: "NLW - SpaceTime",
-        image: Project09,
+        titulo: "NLW - SpaceTime",
+        imagem: Project09,
         tecnologias: [
           <Atom size={32} />,
           <FileTs size={32} />,
@@ -172,7 +174,26 @@ export function Projects() {
         ],
 
         linkRepo: "https://github.com/gersonlamela/NLW-Spacetime",
-        resumo: "NLW Spacetime é uma aplicação de recordação de memórias, onde o usuário poderá adicionar uma timeline memorias marcantes da sua vida",
+        resumo:
+          "NLW Spacetime é uma aplicação de recordação de memórias, onde o utilizador pode adicionar uma timeline com memórias marcantes da sua vida.",
+      },
+    ],
+    Projeto10: [
+      {
+        id: 9,
+        titulo: "NLW Return Impulse Web",
+        imagem: Project01,
+        tecnologias: [
+          <FileTs size={32} />,
+          <Atom size={32} />,
+          <FileJs size={32} />,
+          <FileCss size={32} />,
+        ],
+
+        linkRepo: "https://github.com/gersonlamela/nlw-return-impulse-web",
+        linkWeb: "https://nlw-return-impulse-web-snowy-sigma.vercel.app/",
+        resumo:
+          "O Feedback Widget, carinhosamente apelidado de FeedGet, foi criado com a intenção de enviar feedbacks, seja um problema, uma ideia ou outro, de acordo com a preferência do utilizador. Permite enviar o feedback em texto, juntamente com uma captura de ecrã, diretamente para o email do programador do site.",
       },
     ],
   });
@@ -189,7 +210,7 @@ export function Projects() {
                 <div key={idx} className="">
                   <div className="w-[312px] h-[auto]  md:w-[auto] border-l-4 border-dark dark:border-blue  flex items-center justify-center bg-graydark dark:bg-dark">
                     <img
-                      src={post.image}
+                      src={post.imagem}
                       alt="FOTO"
                       srcSet=""
                       className="w-[312px] h-[312px]  md:w-[auto] text-blue text-5xl font-bold object-contain"
@@ -197,7 +218,7 @@ export function Projects() {
                   </div>
                   <div className="flex items-start flex-col gap-8">
                     <h3 className="text-2xl mt-8 flex flex-col md:flex-row justify-between font-medium text-dark dark:text-light leading-5">
-                      {post.title}
+                      {post.titulo}
                     </h3>
 
                     <div className="text-dark dark:text-light text-justify w-[312px] md:w-[530px] max-h-[70px] scrollbarStyle pr-6">
@@ -221,7 +242,7 @@ export function Projects() {
                           className="relative inset-0 rounded-md ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"
                         >
                           <button className="btn PurpleToBlue before:bg-graylight ">
-                          <GithubLogo className="icon"/>
+                            <GithubLogo className="icon" />
                             <span>Github</span>
                           </button>
                         </a>

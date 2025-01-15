@@ -41,7 +41,7 @@ export function Experience() {
         id: 1,
         title: "Engenharia Multimédia",
         empresa: "ISTEC – Instituto Superior de Tecnologias Avançadas – Porto",
-        date: " [ 04/10/2021 – Atual ]",
+        date: " [ 04/10/2021 – 01/09/2024 ]",
         topico1: "Desenvolvimento de sistemas multimédia",
         topico2: "Produção de conteúdos interativos para e-learning",
         topico3: "Programação de aplicações para a Web",
